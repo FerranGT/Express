@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  form(action='/contact', method='POST')
+    legend Form title
+    .form-group
+      label User Name
+      input.form-control(type='text', name='username', placeholder='Enter your username...')
+    .form-group
+      label Password
+      input.form-control(type='text', name='password', placeholder='Enter your password....')
+    button.btn.btn-primary(type='submit') Submit

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Hello World!!!</h1>
+
+	<ul id="tasks"></ul>
+
+	<form action="/data" method="POST" role="form">
+		<fieldset>
+
+			<legend>Add Task</legend>
+
+			<div class="form-group">
+				<label for="">Name</label>
+				<input type="text" name="description" class="form-control" id="" placeholder="Enter student name...">
+			</div>
+
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</fieldset>
+	</form>
+
+	<form action="" method="" role="form">
+		<fieldset>
+
+			<legend>Delete Task</legend>
+
+			<div class="form-group">
+				<label for="">Name</label>
+				<input type="text" name="description" class="form-control" id="DeleteTask_name" placeholder="Enter student name...">
+			</div>
+
+			<button id="DeleteTask"	type="submit" class="btn btn-primary">Submit</button>
+		</fieldset>
+	</form>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="/js/client.js"></script>
+</body>
+</html>

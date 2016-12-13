@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Cool Project</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+	<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+	<div class="container">
+
+		<h1>My Cool Project 😎</h1>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/about.html">About</a></li>
+			<li><a href="/contact.html">Contact</a></li>
+		</ul>
+
+
+		<form action="" method="" role="form" id="students_form">
+			<fieldset>
+				<legend>Show Students</legend>
+
+				<div class="form-group">
+					<label for="">Name</label>
+					<input type="text" class="form-control" id="student_name" placeholder="Enter student name...">
+				</div>
+
+				<div class="form-group">
+					<label for="">Limit</label>
+					<select name="" id="limit_students">
+						<option >1</option>
+						<option >2</option>
+						<option >3</option>
+						<option >4</option>
+						<option >5</option>
+						<option >6</option>
+						<option >7</option>
+						<option >8</option>
+						<option >9</option>
+						<option>10</option>
+						<option >11</option>
+						<option >12</option>
+						<option >13</option>
+						<option >14</option>
+						<option >15</option>
+						<option >16</option>
+						<option >17</option>
+						<option >18</option>
+						<option >19</option>
+						<option selected>20</option>
+					</select>
+				</div>
+			</fieldset>
+			<p><button type="submit" class="btn btn-primary">Get Students</button></p>
+		</form>
+
+		<ul id="students"></ul>
+
+		<hr style="border:10px solid blue;">
+
+		<form action="/data" method="POST" role="form">
+			<fieldset>
+
+				<legend>Add Student</legend>
+
+				<div class="form-group">
+					<label for="">Name</label>
+					<input type="text" name="name" class="form-control" id="" placeholder="Enter student name...">
+				</div>
+
+				<div class="form-group">
+					<label for="">Github</label>
+					<input type="text" name="github" class="form-control" id="" placeholder="Enter github url...">
+				</div>
+
+				<div class="form-group">
+					<label for="">Email</label>
+					<input type="text" name="mail" class="form-control" id="" placeholder="Enter email...">
+				</div>
+
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</fieldset>
+		</form>
+
+
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="/js/main.js"></script>
+</body>
+</html>

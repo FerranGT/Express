@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  .container.theme-showcase(role='main')
+    h1= title
+    .row
+      .col-md-6
+        form(action='/task', method='POST', role='form')
+            .form-group
+              label(for='') Descripcion
+              input.form-control(type='text', name='desc', autofocus, placeholder='Add yout task...')
+            button.btn.btn-primary(type='submit') Submit
+      .col-md-6
+        .jumbotron
+          ul#tasks.list-group
+            each task,index in tasks
+              li.list-group-item(data-index=index)= task.desc
+              li.list-group-item(data-index=index)= task.date
+                a(href="#") delete
+                a(href="#") done
